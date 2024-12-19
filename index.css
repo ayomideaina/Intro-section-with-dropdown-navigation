@@ -1,11 +1,155 @@
-/* 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.epilogue-<uniquifier> {
+body{
+  background-color: #f8f8f8ff;
+  color: #333;
+  padding:  0 5px;
   font-family: "Epilogue", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
-*/
+
+/* Navbar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+
+}
+.navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.logo:hover{
+  /* text-shadow: 0 0 25px rgb(255, 30, 236); */
+  transform: scale(1.1);
+}
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links li {
+  position: relative;
+  margin-right: 12px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+  font-size: 15px;
+}
+.nav-links a:hover {
+  color: black;
+}
+
+/* Dropdown Menu */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 8px;
+  list-style: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown-content li {
+  padding: 8px 16px;
+}
+.dropdown-content a {
+  color: #555;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.login, .register {
+  margin-right: 20px;
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+  align-items: center;
+}
+.register:hover {
+  color:white;
+  background-color: #007bff;
+  transform: scale(1.1);
+}
+.register{
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Hero Section */
+.container {
+  padding: 10px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  /* margin: 0px 30px; */
+}
+
+.hero-content {
+  max-width: 550px;
+}
+.hero-content h1{
+  font-size: 60px;
+}
+
+.hero-content p{
+  margin: 35px 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: grey;
+}
+ 
+.learnmore {
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.clients img {
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+.heroimage img{
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+}
+.mobile-image {
+  display: none;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro-section-with-dropdown</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
@@ -12,20 +13,21 @@
 <body>
     <!-- header -->
     <header class ="navbar">
-        <div class="logo">Snap</div>
+        <div class="hamburger" id ="hamburger">&#9776;</div>
         <nav class="nav-links">
+            <div class="logo">Snap</div>
             <div class="dropdown">
-                <a href="#">Features</a>
-                <ul class="dropdown-menu">
-                    <li><a href = "#">Todo Lists</a></li>
+                <a href="#" class="dropbtn">Features <span>&#9662;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href = "#">Todo List</a></li>
                     <li><a href = "#">Calendar</a></li>
                     <li><a href = "#">Reminders</a></li>
                     <li><a href = "#">Planning</a></li>
                 </ul>
             </div>
             <div class ="dropdown">
-                <a href="#">Company</a>
-                <ul class="dropdown-menu">
+                <a href="#" class="dropbtn">Company <span>&#9662;</span></a>
+                <ul class="dropdown-content">
                     <li><a href = "#">History</a></li>
                     <li><a href = "#">Our Team</a></li>
                     <li><a href = "#">Blog</a></li>
@@ -42,13 +44,13 @@
     <!-- main content -->
     <main class = "container">
         <section class= "hero">
-            <div class="text-content">
+            <div class="hero-content">
                 <h1>Make remote work</h1>
-                <p>Get your team in syn, no matter your location.
+                <p>Get your team in sync, no matter your location.
                     Streamline processes, create team rituals, and 
                     watch produtivity soar.
                 </p>
-                <button class="more">Learn more</button>
+                <button class="learnmore">Learn more</button>
                 <div class="clients">
                     <img src ="images/client-databiz.svg" alt="databiz">
                     <img src ="images/client-audiophile.svg" alt="audiophile">
@@ -57,10 +59,11 @@
                 </div>
             </div>
             <div class="heroimage">
-                <img src="images/image-hero-desktop.png" alt="heroimage">
-                <!-- <img src="images/image-hero-mobile.png" alt="heroimage"> -->
+                <img src="images/image-hero-desktop.png" class="desktop-image" alt="heroimage">
+                <img src="images/image-hero-mobile.png" class="mobile-image" alt="heroimage">
             </div>
         </section>
     </main>
+    <script src ="script.js"></script>
 </body>
 </html>
