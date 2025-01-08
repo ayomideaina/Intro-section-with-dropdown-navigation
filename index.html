@@ -12,11 +12,11 @@
 </head>
 <body>
     <!-- header -->
-    <header class ="navbar">
-        <div class="hamburger" id ="hamburger">&#9776;</div>
-        <nav class="nav-links">
+    <header class ="header">
+        <div class="hamburger" id ="hamburger">&#9776; </div>
+        <nav class="navbar"> 
             <div class="logo">Snap</div>
-            <div class="dropdown">
+            <div class="dropdown" id= "droplinks">
                 <a href="#" class="dropbtn">Features <span>&#9662;</span></a>
                 <ul class="dropdown-content">
                     <li><a href = "#">Todo List</a></li>
@@ -25,7 +25,7 @@
                     <li><a href = "#">Planning</a></li>
                 </ul>
             </div>
-            <div class ="dropdown">
+            <div class ="dropdown" id= "droplinks">
                 <a href="#" class="dropbtn">Company <span>&#9662;</span></a>
                 <ul class="dropdown-content">
                     <li><a href = "#">History</a></li>
@@ -33,13 +33,16 @@
                     <li><a href = "#">Blog</a></li>
                 </ul>
             </div>
-            <a href="#">Career</a>
-            <a href="#">About</a>
+            <div class ="about" id= "droplinks">
+                <a href="#">Career</a>
+                <a href="#">About</a>
+            </div>
         </nav>
-        <div class ="header-button">
+        <div class ="header-button" id= "droplinks">
             <a href="#" class="login">Login</a>
-            <button class="register">Register</button>
+            <a href="#" class="register">Register</a>
         </div>
+    
     </header>
     <!-- main content -->
     <main class = "container">
