@@ -1,8 +1,10 @@
-const hamburger = document.getElementById("hamburger");
-const navbar = document.getElementById("droplinks");
-const headerButtons = document.querySelector(".header-button");
-
-hamburger.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-    headerButtons.classList.toggle("active");
-});
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const menuItems = document.querySelectorAll('#droplinks');
+  
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      menuItems.forEach((menu) => menu.classList.toggle('active'));
+    });
+  });
+  
